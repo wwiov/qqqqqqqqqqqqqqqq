@@ -1,0 +1,1165 @@
+
+/* =========================================
+   SELENA MASSAGE SPA
+   GALLERY PAGE - PART 1
+========================================= */
+
+
+/* =========================================
+   1. GENERAL GALLERY SETTINGS
+========================================= */
+
+.gallery-page {
+    overflow-x: hidden;
+}
+
+.gallery-page section {
+    position: relative;
+}
+
+.gallery-page .section-padding {
+    padding: 100px 7%;
+}
+
+.gallery-page .section-subtitle {
+    display: inline-block;
+
+    color: var(--primary-color);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+
+    text-transform: uppercase;
+}
+
+.gallery-page .section-heading {
+    max-width: 750px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.gallery-page .section-heading h2 {
+    color: var(--heading-color);
+
+    font-family: var(--heading-font);
+
+    font-size: 42px;
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    margin-bottom: 18px;
+}
+
+.gallery-page .section-heading h2 span {
+    color: var(--primary-color);
+}
+
+.gallery-page .section-heading p {
+    color: var(--text-color);
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   2. GALLERY HERO
+========================================= */
+
+.gallery-hero {
+    min-height: 600px;
+
+    height: 80vh;
+    max-height: 800px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(30, 24, 19, 0.55),
+            rgba(30, 24, 19, 0.65)
+        ),
+        url("../images/gallery/gallery-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+}
+
+.gallery-hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(25, 20, 15, 0.35),
+            rgba(25, 20, 15, 0.70)
+        );
+
+    z-index: 1;
+}
+
+.gallery-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 90%;
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 40px 0;
+}
+
+.gallery-hero-content .gallery-subtitle {
+    display: inline-block;
+
+    color: var(--gold-light);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 22px;
+}
+
+.gallery-hero-content h1 {
+    color: var(--white-color);
+
+    font-family: var(--heading-font);
+
+    font-size: clamp(42px, 6vw, 70px);
+
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+}
+
+.gallery-hero-content h1 span {
+    color: var(--primary-light);
+}
+
+.gallery-hero-content p {
+    max-width: 650px;
+
+    margin: 0 auto 32px;
+
+    color: rgba(255, 255, 255, 0.90);
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+
+/* HERO BUTTON */
+
+.gallery-page .btn-primary {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 15px 30px;
+
+    background: var(--primary-color);
+
+    color: var(--white-color);
+
+    border: 1px solid var(--primary-color);
+
+    border-radius: var(--radius-full);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: var(--transition);
+}
+
+.gallery-page .btn-primary:hover {
+    background: var(--primary-dark);
+
+    border-color: var(--primary-dark);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   3. GALLERY INTRODUCTION
+========================================= */
+
+.gallery-intro {
+    background: var(--cream-light);
+
+    text-align: center;
+}
+
+.gallery-intro-container {
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
+.gallery-intro-container h2 {
+    color: var(--heading-color);
+
+    font-family: var(--heading-font);
+
+    font-size: 42px;
+
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    margin-bottom: 22px;
+}
+
+.gallery-intro-container h2 span {
+    color: var(--primary-color);
+}
+
+.gallery-intro-container p {
+    color: var(--text-color);
+
+    font-size: 15px;
+
+    line-height: 2;
+
+    max-width: 720px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   4. GALLERY COLLECTION
+========================================= */
+
+.gallery-collection {
+    background: var(--cream-color);
+}
+
+
+/* =========================================
+   5. GALLERY FILTER BUTTONS
+========================================= */
+
+.gallery-filters {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-bottom: 45px;
+}
+
+.gallery-filter {
+    padding: 12px 25px;
+
+    background: transparent;
+
+    color: var(--text-color);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: var(--radius-full);
+
+    font-family: var(--body-font);
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.gallery-filter:hover {
+    color: var(--primary-dark);
+
+    border-color: var(--primary-color);
+}
+
+.gallery-filter.active {
+    background: var(--primary-color);
+
+    color: var(--white-color);
+
+    border-color: var(--primary-color);
+
+    box-shadow: var(--shadow-sm);
+}
+
+
+/* =========================================
+   6. GALLERY GRID
+========================================= */
+
+.gallery-page-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   7. GALLERY IMAGE ITEMS
+========================================= */
+
+.gallery-page-item {
+    position: relative;
+
+    height: 330px;
+
+    overflow: hidden;
+
+    background: var(--beige-color);
+
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow-sm);
+
+    transition: var(--transition);
+}
+
+.gallery-page-item:hover {
+    transform: translateY(-5px);
+
+    box-shadow: var(--shadow-md);
+}
+
+.gallery-page-item img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.gallery-page-item:hover img {
+    transform: scale(1.08);
+}
+
+
+/* =========================================
+   8. GALLERY IMAGE OVERLAY
+========================================= */
+
+.gallery-page-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 25px;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(25, 20, 15, 0.85),
+            rgba(25, 20, 15, 0.05) 75%
+        );
+
+    opacity: 0;
+
+    transition: var(--transition);
+}
+
+.gallery-page-item:hover .gallery-page-overlay {
+    opacity: 1;
+}
+
+.gallery-page-overlay span {
+    display: block;
+
+    color: var(--gold-light);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 8px;
+}
+
+.gallery-page-overlay h3 {
+    color: var(--white-color);
+
+    font-family: var(--heading-font);
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   9. IMAGE VIEW BUTTON
+========================================= */
+
+.gallery-view-btn {
+    flex-shrink: 0;
+
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: var(--primary-color);
+
+    color: var(--white-color);
+
+    border: none;
+
+    border-radius: 50%;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.gallery-view-btn:hover {
+    background: var(--white-color);
+
+    color: var(--primary-dark);
+
+    transform: rotate(90deg);
+}
+
+
+/* =========================================
+   10. GALLERY FILTER ANIMATION
+========================================= */
+
+.gallery-page-item.hide-item {
+    display: none;
+}
+
+.gallery-page-item.show-item {
+    animation: galleryFadeIn 0.5s ease both;
+}
+
+@keyframes galleryFadeIn {
+
+    from {
+        opacity: 0;
+        transform: scale(0.94);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+/* =========================================
+   11. GALLERY BOOKING CTA
+========================================= */
+
+.gallery-cta {
+    min-height: 430px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 90px 7%;
+
+    background:
+        linear-gradient(
+            rgba(37, 29, 21, 0.78),
+            rgba(37, 29, 21, 0.82)
+        ),
+        url("../images/gallery/gallery-cta.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    text-align: center;
+}
+
+.gallery-cta-content {
+    max-width: 750px;
+}
+
+.gallery-cta-content .section-subtitle {
+    color: var(--gold-light);
+}
+
+.gallery-cta-content h2 {
+    color: var(--white-color);
+
+    font-family: var(--heading-font);
+
+    font-size: 43px;
+
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    margin-bottom: 20px;
+}
+
+.gallery-cta-content h2 span {
+    color: var(--primary-light);
+}
+
+.gallery-cta-content p {
+    color: rgba(255, 255, 255, 0.88);
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   12. IMAGE LIGHTBOX
+========================================= */
+
+.gallery-lightbox {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 80px;
+
+    background: rgba(15, 12, 10, 0.96);
+}
+
+.gallery-lightbox.active {
+    display: flex;
+}
+
+.lightbox-content {
+    width: 100%;
+    max-width: 950px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.lightbox-content img {
+    display: block;
+
+    width: auto;
+    max-width: 100%;
+
+    max-height: 75vh;
+
+    object-fit: contain;
+
+    border-radius: var(--radius-sm);
+
+    box-shadow: var(--shadow-lg);
+}
+
+.lightbox-content p {
+    color: var(--white-color);
+
+    font-size: 14px;
+
+    margin-top: 20px;
+}
+
+
+/* LIGHTBOX BUTTONS */
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    color: var(--white-color);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 50%;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background: var(--primary-color);
+
+    border-color: var(--primary-color);
+
+    transform: scale(1.08);
+}
+
+.lightbox-close {
+    top: 30px;
+    right: 35px;
+}
+
+.lightbox-prev {
+    left: 30px;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.lightbox-prev:hover {
+    transform: translateY(-50%) scale(1.08);
+}
+
+.lightbox-next {
+    right: 30px;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.lightbox-next:hover {
+    transform: translateY(-50%) scale(1.08);
+}
+
+
+/* =========================================
+   END OF GALLERY CSS PART 1
+========================================= */
+
+
+
+/* =========================================
+   SELENA MASSAGE SPA
+   GALLERY PAGE - PART 2
+   RESPONSIVE DESIGN
+========================================= */
+
+
+/* =========================================
+   1. LARGE TABLETS AND SMALL LAPTOPS
+========================================= */
+
+@media screen and (max-width: 1100px) {
+
+    .gallery-page .section-padding {
+        padding: 85px 5%;
+    }
+
+    .gallery-page-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+
+    .gallery-page-item {
+        height: 310px;
+    }
+
+    .gallery-intro-container h2 {
+        font-size: 37px;
+    }
+
+}
+
+
+/* =========================================
+   2. TABLET RESPONSIVENESS
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    .gallery-page .section-padding {
+        padding: 70px 6%;
+    }
+
+
+    /* HERO */
+
+    .gallery-hero {
+        min-height: 520px;
+        height: auto;
+        max-height: none;
+
+        padding: 90px 0;
+    }
+
+    .gallery-hero-content {
+        width: 88%;
+    }
+
+    .gallery-hero-content h1 {
+        font-size: 46px;
+    }
+
+    .gallery-hero-content p {
+        font-size: 15px;
+    }
+
+
+    /* INTRODUCTION */
+
+    .gallery-intro-container h2 {
+        font-size: 35px;
+    }
+
+    .gallery-intro-container p {
+        font-size: 14px;
+    }
+
+
+    /* SECTION HEADING */
+
+    .gallery-page .section-heading h2 {
+        font-size: 35px;
+    }
+
+
+    /* FILTER BUTTONS */
+
+    .gallery-filters {
+        gap: 10px;
+        margin-bottom: 35px;
+    }
+
+    .gallery-filter {
+        padding: 11px 20px;
+        font-size: 12px;
+    }
+
+
+    /* GALLERY GRID */
+
+    .gallery-page-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .gallery-page-item {
+        height: 270px;
+    }
+
+    .gallery-page-overlay {
+        opacity: 1;
+        padding: 18px;
+    }
+
+    .gallery-page-overlay h3 {
+        font-size: 18px;
+    }
+
+    .gallery-page-overlay span {
+        font-size: 10px;
+    }
+
+    .gallery-view-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+
+    /* BOOKING CTA */
+
+    .gallery-cta {
+        min-height: 380px;
+        padding: 75px 6%;
+    }
+
+    .gallery-cta-content h2 {
+        font-size: 36px;
+    }
+
+
+    /* LIGHTBOX */
+
+    .gallery-lightbox {
+        padding: 60px 55px;
+    }
+
+    .lightbox-content img {
+        max-height: 65vh;
+    }
+
+    .lightbox-close {
+        top: 20px;
+        right: 20px;
+    }
+
+    .lightbox-prev {
+        left: 10px;
+    }
+
+    .lightbox-next {
+        right: 10px;
+    }
+
+}
+
+
+/* =========================================
+   3. MOBILE PHONE RESPONSIVENESS
+========================================= */
+
+@media screen and (max-width: 576px) {
+
+    .gallery-page .section-padding {
+        padding: 60px 5%;
+    }
+
+
+    /* HERO */
+
+    .gallery-hero {
+        min-height: 480px;
+        padding: 75px 0;
+    }
+
+    .gallery-hero-content {
+        width: 92%;
+    }
+
+    .gallery-hero-content .gallery-subtitle {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .gallery-hero-content h1 {
+        font-size: 35px;
+        line-height: 1.25;
+    }
+
+    .gallery-hero-content p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+
+    /* INTRODUCTION */
+
+    .gallery-intro-container h2 {
+        font-size: 29px;
+    }
+
+    .gallery-intro-container p {
+        font-size: 13px;
+        line-height: 1.9;
+    }
+
+
+    /* SECTION HEADING */
+
+    .gallery-page .section-subtitle {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .gallery-page .section-heading h2 {
+        font-size: 29px;
+    }
+
+    .gallery-page .section-heading p {
+        font-size: 13px;
+    }
+
+
+    /* FILTER BUTTONS */
+
+    .gallery-filters {
+        gap: 8px;
+        margin-bottom: 30px;
+    }
+
+    .gallery-filter {
+        padding: 10px 16px;
+        font-size: 11px;
+    }
+
+
+    /* GALLERY GRID */
+
+    .gallery-page-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .gallery-page-item {
+        width: 100%;
+        max-width: 430px;
+        height: 290px;
+
+        margin: 0 auto;
+    }
+
+    .gallery-page-overlay {
+        opacity: 1;
+        padding: 20px;
+    }
+
+    .gallery-page-overlay h3 {
+        font-size: 20px;
+    }
+
+
+    /* BOOKING CTA */
+
+    .gallery-cta {
+        min-height: 350px;
+        padding: 65px 5%;
+    }
+
+    .gallery-cta-content h2 {
+        font-size: 29px;
+    }
+
+    .gallery-cta-content p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .gallery-page .btn-primary {
+        padding: 14px 23px;
+        font-size: 12px;
+    }
+
+
+    /* LIGHTBOX */
+
+    .gallery-lightbox {
+        padding: 65px 15px 40px;
+    }
+
+    .lightbox-content {
+        max-width: 100%;
+    }
+
+    .lightbox-content img {
+        width: 100%;
+        max-height: 65vh;
+    }
+
+    .lightbox-content p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .lightbox-close,
+    .lightbox-prev,
+    .lightbox-next {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .lightbox-close {
+        top: 12px;
+        right: 12px;
+    }
+
+    .lightbox-prev {
+        left: 8px;
+        top: auto;
+        bottom: 15px;
+        transform: none;
+    }
+
+    .lightbox-prev:hover {
+        transform: scale(1.08);
+    }
+
+    .lightbox-next {
+        right: 8px;
+        top: auto;
+        bottom: 15px;
+        transform: none;
+    }
+
+    .lightbox-next:hover {
+        transform: scale(1.08);
+    }
+
+}
+
+
+/* =========================================
+   4. VERY SMALL MOBILE SCREENS
+========================================= */
+
+@media screen and (max-width: 360px) {
+
+    .gallery-hero-content h1 {
+        font-size: 30px;
+    }
+
+    .gallery-intro-container h2 {
+        font-size: 25px;
+    }
+
+    .gallery-page .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .gallery-filter {
+        padding: 9px 12px;
+        font-size: 10px;
+    }
+
+    .gallery-page-item {
+        height: 250px;
+    }
+
+    .gallery-page-overlay h3 {
+        font-size: 17px;
+    }
+
+    .gallery-cta-content h2 {
+        font-size: 25px;
+    }
+
+}
+
+
+/* =========================================
+   5. GALLERY REVEAL ANIMATION
+========================================= */
+
+.gallery-page .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.gallery-page .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   6. LIGHTBOX BODY SCROLL CONTROL
+========================================= */
+
+body.gallery-lightbox-open {
+    overflow: hidden;
+}
+
+
+/* =========================================
+   7. ACCESSIBILITY
+========================================= */
+
+.gallery-page button:focus-visible {
+    outline: 3px solid var(--primary-light);
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .gallery-page *,
+    .gallery-page *::before,
+    .gallery-page *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .gallery-page .reveal {
+        opacity: 1;
+        transform: none;
+    }
+
+}
+
+
+/* =========================================
+   END OF GALLERY CSS PART 2
+========================================= */
+

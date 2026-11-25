@@ -1,0 +1,694 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Selena Massage Spa</title>
+
+    <meta name="description"
+        content="Explore the Selena Massage Spa gallery featuring massage treatments, tattoo artwork and spa experiences.">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/gallery.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="js/app.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+
+</head>
+
+<body class="gallery-page">
+
+
+    <!-- =====================================
+         HEADER
+    ====================================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                <span>Selena</span>
+                <small>Massage Spa</small>
+            </a>
+
+            <button class="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+
+                <i class="fas fa-bars"></i>
+
+            </button>
+
+            <nav class="nav-menu">
+
+                <a href="index.html" class="nav-link">Home</a>
+
+                <a href="about.html" class="nav-link">About</a>
+
+                <a href="massage.html" class="nav-link">Massage</a>
+
+                <a href="tattoo.html" class="nav-link">Tattoo</a>
+
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+
+                <a href="booking.html" class="nav-link">Booking</a>
+
+                <a href="contact.html" class="nav-link">Contact</a>
+
+            </nav>
+
+            <a href="booking.html" class="nav-booking-btn">
+                Book Now
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================
+         GALLERY HERO
+    ====================================== -->
+
+    <section class="gallery-hero">
+
+        <div class="gallery-hero-overlay"></div>
+
+        <div class="gallery-hero-content reveal">
+
+            <span class="gallery-subtitle">
+                OUR PHOTO COLLECTION
+            </span>
+
+            <h1>
+                Explore Our
+                <span>Beautiful Gallery</span>
+            </h1>
+
+            <p>
+                Discover the beauty of relaxation, creative
+                tattoo artwork and the atmosphere of Selena
+                Massage Spa through our photo collection.
+            </p>
+
+            <a href="#gallery-collection" class="btn-primary">
+                Explore Gallery
+                <i class="fas fa-arrow-down"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         GALLERY INTRODUCTION
+    ====================================== -->
+
+    <section class="gallery-intro section-padding">
+
+        <div class="gallery-intro-container reveal">
+
+            <span class="section-subtitle">
+                A LOOK INSIDE SELENA
+            </span>
+
+            <h2>
+                Beauty, Relaxation &
+                <span>Artistic Expression</span>
+            </h2>
+
+            <p>
+                Take a closer look at our massage services,
+                tattoo inspiration and spa atmosphere.
+                Our gallery brings together images that
+                showcase the different experiences offered
+                at Selena Massage Spa.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         GALLERY COLLECTION
+    ====================================== -->
+
+    <section class="gallery-collection section-padding"
+        id="gallery-collection">
+
+
+        <!-- GALLERY HEADING -->
+
+        <div class="section-heading reveal">
+
+            <span class="section-subtitle">
+                OUR COLLECTION
+            </span>
+
+            <h2>
+                Moments Worth <span>Exploring</span>
+            </h2>
+
+            <p>
+                Browse our collection using the categories
+                below.
+            </p>
+
+        </div>
+
+
+        <!-- GALLERY FILTER BUTTONS -->
+
+        <div class="gallery-filters reveal">
+
+            <button class="gallery-filter active"
+                data-filter="all"
+                type="button">
+
+                All Photos
+
+            </button>
+
+            <button class="gallery-filter"
+                data-filter="massage"
+                type="button">
+
+                Massage
+
+            </button>
+
+            <button class="gallery-filter"
+                data-filter="tattoo"
+                type="button">
+
+                Tattoo
+
+            </button>
+
+            <button class="gallery-filter"
+                data-filter="spa"
+                type="button">
+
+                Spa Environment
+
+            </button>
+
+        </div>
+
+
+        <!-- GALLERY GRID -->
+
+        <div class="gallery-page-grid">
+
+
+            <!-- IMAGE 1: SPA -->
+
+            <div class="gallery-page-item reveal"
+                data-category="spa">
+
+                <img
+                    src="image/gallery/spa-room.png"
+                    alt="Beautiful spa room">
+
+                <div class="gallery-page-overlay">
+
+                    <div>
+                        <span>Spa Environment</span>
+                        <h3>Relaxing Spa Space</h3>
+                    </div>
+
+                    <button class="gallery-view-btn"
+                        type="button"
+                        aria-label="View relaxing spa space">
+
+                        <i class="fas fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 2: MASSAGE -->
+
+            <div class="gallery-page-item reveal"
+                data-category="massage">
+
+                <img
+                    src="image/gallery/swedish-massage.png"
+                    alt="Swedish massage treatment">
+
+                <div class="gallery-page-overlay">
+
+                    <div>
+                        <span>Massage</span>
+                        <h3>Swedish Massage</h3>
+                    </div>
+
+                    <button class="gallery-view-btn"
+                        type="button"
+                        aria-label="View Swedish massage image">
+
+                        <i class="fas fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 3: TATTOO -->
+
+            <div class="gallery-page-item reveal"
+                data-category="tattoo">
+
+                <img
+                    src="image/gallery/floral-tattoo.png"
+                    alt="Floral tattoo artwork">
+
+                <div class="gallery-page-overlay">
+
+                    <div>
+                        <span>Tattoo</span>
+                        <h3>Floral Tattoo Art</h3>
+                    </div>
+
+                    <button class="gallery-view-btn"
+                        type="button"
+                        aria-label="View floral tattoo image">
+
+                        <i class="fas fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 4: MASSAGE -->
+
+            <div class="gallery-page-item reveal"
+                data-category="massage">
+
+                <img
+                    src="image/gallery/hot-stone.png"
+                    alt="Hot stone massage treatment">
+
+                <div class="gallery-page-overlay">
+
+                    <div>
+                        <span>Massage</span>
+                        <h3>Hot Stone Massage</h3>
+                    </div>
+
+                    <button class="gallery-view-btn"
+                        type="button"
+                        aria-label="View hot stone massage image">
+
+                        <i class="fas fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 5: SPA -->
+
+            <div class="gallery-page-item reveal"
+                data-category="spa">
+
+                <img
+                    src="image/gallery/spa-decoration.png"
+                    alt="Spa interior decoration">
+
+                <div class="gallery-page-overlay">
+
+                    <div>
+                        <span>Spa Environment</span>
+                        <h3>Peaceful Atmosphere</h3>
+                    </div>
+
+                    <button class="gallery-view-btn"
+                        type="button"
+                        aria-label="View spa decoration image">
+
+                        <i class="fas fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 6: TATTOO -->
+
+            <div class="gallery-page-item reveal"
+                data-category="tattoo">
+
+                <img
+                    src="image/gallery/fine-line-tattoo.png"
+                    alt="Fine line tattoo design">
+
+                <div class="gallery-page-overlay">
+
+                    <div>
+                        <span>Tattoo</span>
+                        <h3>Fine Line Artwork</h3>
+                    </div>
+
+                    <button class="gallery-view-btn"
+                        type="button"
+                        aria-label="View fine line tattoo image">
+
+                        <i class="fas fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 7: MASSAGE -->
+
+            <div class="gallery-page-item reveal"
+                data-category="massage">
+
+                <img
+                    src="image/gallery/nuru-massage.png"
+                    alt="Nuru Massage treatment">
+
+                <div class="gallery-page-overlay">
+
+                    <div>
+                        <span>Massage</span>
+                        <h3>Nuru Massage</h3>
+                    </div>
+
+                    <button class="gallery-view-btn"
+                        type="button"
+                        aria-label="View nuru massage image">
+
+                        <i class="fas fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 8: TATTOO -->
+
+            <div class="gallery-page-item reveal"
+                data-category="tattoo">
+
+                <img
+                    src="image/gallery/blackwork-tattoo.png"
+                    alt="Blackwork tattoo design">
+
+                <div class="gallery-page-overlay">
+
+                    <div>
+                        <span>Tattoo</span>
+                        <h3>Blackwork Design</h3>
+                    </div>
+
+                    <button class="gallery-view-btn"
+                        type="button"
+                        aria-label="View blackwork tattoo image">
+
+                        <i class="fas fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 9: SPA -->
+
+            <div class="gallery-page-item reveal"
+                data-category="spa">
+
+                <img
+                    src="image/gallery/spa-treatment.png"
+                    alt="Spa treatment room">
+
+                <div class="gallery-page-overlay">
+
+                    <div>
+                        <span>Spa Environment</span>
+                        <h3>Spa Experience</h3>
+                    </div>
+
+                    <button class="gallery-view-btn"
+                        type="button"
+                        aria-label="View spa treatment room">
+
+                        <i class="fas fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         GALLERY BOOKING CTA
+    ====================================== -->
+
+    <section class="gallery-cta">
+
+        <div class="gallery-cta-content reveal">
+
+            <span class="section-subtitle">
+                EXPERIENCE SELENA
+            </span>
+
+            <h2>
+                Ready to Experience
+                <span>Something Beautiful?</span>
+            </h2>
+
+            <p>
+                Explore our services and book an appointment
+                to discuss your preferred massage treatment
+                or tattoo design.
+            </p>
+
+            <a href="booking.html" class="btn-primary">
+                Book an Appointment
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-grid">
+
+
+            <!-- FOOTER ABOUT -->
+
+            <div class="footer-about">
+
+                <a href="index.html" class="logo">
+
+                    <span>Selena</span>
+                    <small>Massage Spa</small>
+
+                </a>
+
+                <p>
+                    A place to explore relaxation, beauty
+                    and creative self-expression.
+                </p>
+
+                 <div class="footer-socials">
+
+                    <a href="https://web.facebook.com/login/?_rdc=1&_rdr">
+                        <i class="fab fa-facebook-f"></i></a>
+
+
+                    <a href="https://www.instagram.com/?hl=en">
+                        <i class="fab fa-instagram"></i></a>
+
+                    <a href="https://www.tiktok.com" aria-label="TikTok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+
+                    <!-- <a href="#" aria-label="Pinterest"> -->
+                        <!-- <i class="fa-brands fa-pinterest-p"></i> -->
+                    <!-- </a> -->
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About Us</a>
+
+                <a href="massage.html">Massage</a>
+
+                <a href="tattoo.html">Tattoo</a>
+
+                <a href="gallery.html">Gallery</a>
+
+            </div>
+
+
+            <!-- SERVICES -->
+
+            <div class="footer-column">
+
+                <h3>Our Services</h3>
+
+                <a href="massage.html">Massage Therapy</a>
+
+                <a href="tattoo.html">Tattoo Designs</a>
+
+                <a href="booking.html">Online Booking</a>
+
+                <a href="contact.html">Contact Us</a>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    Selenashepard92@gmail.com
+                </p>
+
+                <a href="booking.html">
+                    Book an Appointment
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Selena Massage Spa.
+                All Rights Reserved.
+            </p>
+
+            <div>
+
+                <a href="privacy.html">Privacy Policy</a>
+
+                <a href="terms.html">Terms & Conditions</a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================
+         IMAGE LIGHTBOX
+    ====================================== -->
+
+    <div class="gallery-lightbox" id="gallery-lightbox"
+        aria-hidden="true">
+
+        <button class="lightbox-close"
+            type="button"
+            aria-label="Close image viewer">
+
+            <i class="fas fa-times"></i>
+
+        </button>
+
+        <button class="lightbox-prev"
+            type="button"
+            aria-label="Previous image">
+
+            <i class="fas fa-chevron-left"></i>
+
+        </button>
+
+        <div class="lightbox-content">
+
+            <img
+                src=""
+                alt="Enlarged gallery photograph"
+                id="lightbox-image">
+
+            <p id="lightbox-caption"></p>
+
+        </div>
+
+        <button class="lightbox-next"
+            type="button"
+            aria-label="Next image">
+
+            <i class="fas fa-chevron-right"></i>
+
+        </button>
+
+    </div>
+
+
+</body>
+</html>

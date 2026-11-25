@@ -1,0 +1,981 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Make Payment | Selena Massage Spa</title>
+
+    <meta name="description"
+        content="Complete your Selena Massage Spa appointment payment and submit your payment confirmation.">
+
+    <meta name="theme-color" content="#f8f4eb">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/payment.css">
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/app.js" defer></script>
+    <script src="js/payment.js" defer></script>
+
+</head>
+
+<body class="payment-page">
+
+    <!-- =====================================
+         TOP BAR
+    ====================================== -->
+
+    <div class="top-bar">
+
+        <div class="container top-bar-content">
+
+            <p>
+                <i class="fas fa-spa"></i>
+                Welcome to Selena Massage Spa
+            </p>
+
+            <div class="top-bar-contact">
+
+                <span>
+                    <i class="fas fa-lock"></i>
+                    Secure Payment Submission
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================
+         HEADER / NAVIGATION
+    ====================================== -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <!-- LOGO -->
+
+            <a href="index.html" class="logo">
+
+                <div class="logo-icon">
+                    <i class="fas fa-spa"></i>
+                </div>
+
+                <div class="logo-text">
+
+                    <strong>SELENA</strong>
+
+                    <small>MASSAGE SPA & TATTOO</small>
+
+                </div>
+
+            </a>
+
+
+            <!-- NAVIGATION -->
+
+            <nav class="navbar nav-menu" id="navbar">
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="massage.html">Massage</a>
+                    </li>
+
+                    <li>
+                        <a href="tattoo.html">Tattoo</a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+
+                <a href="booking.html" class="nav-book-btn">
+
+                    Book Now
+
+                    <i class="fas fa-arrow-right"></i>
+
+                </a>
+
+            </nav>
+
+
+            <!-- MOBILE MENU BUTTON -->
+
+            <button class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="navbar">
+
+                <i class="fas fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================
+         PAYMENT HERO
+    ====================================== -->
+
+    <section class="payment-hero">
+
+        <div class="container">
+
+            <span class="section-subtitle">
+                COMPLETE YOUR APPOINTMENT
+            </span>
+
+            <h1>
+                Make Your <span>Payment</span>
+            </h1>
+
+            <p>
+                Choose your preferred payment method and submit
+                your transaction confirmation.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         PAYMENT SECTION
+    ====================================== -->
+
+    <section class="payment-page-section">
+
+        <div class="container payment-layout">
+
+
+            <!-- =================================
+                 PAYMENT INFORMATION
+            ================================== -->
+
+            <div class="payment-information">
+
+                <span class="section-subtitle">
+                    PAYMENT DETAILS
+                </span>
+
+                <h2>Complete Your Booking</h2>
+
+                <p>
+                    Use your booking reference to connect your
+                    payment with your appointment request.
+                </p>
+
+
+                <!-- BOOKING SUMMARY -->
+
+                <div class="payment-summary-card">
+
+                    <div class="payment-summary-heading">
+
+                        <i class="fas fa-calendar-check"></i>
+
+                        <h3>Booking Summary</h3>
+
+                    </div>
+
+
+                    <div class="summary-item">
+
+                        <span>Booking Reference</span>
+
+                        <strong id="summary-booking-reference">
+                            Enter your booking reference
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-item">
+
+                        <span>Customer Name</span>
+
+                        <strong id="summary-customer-name">
+                            Not provided
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-item">
+
+                        <span>Email Address</span>
+
+                        <strong id="summary-customer-email">
+                            Not provided
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-item">
+
+                        <span>Amount Due</span>
+
+                        <strong id="summary-booking-amount">
+                            Enter your booking details
+                        </strong>
+
+                    </div>
+
+
+                    <p class="summary-note">
+
+                        Please confirm your booking amount with
+                        Selena before sending payment.
+
+                    </p>
+
+                </div>
+
+
+                <!-- PAYMENT BENEFIT 1 -->
+
+                <div class="payment-benefit">
+
+                    <div class="payment-benefit-icon">
+
+                        <i class="fas fa-shield-alt"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Payment Review</h3>
+
+                        <p>
+                            Every submitted payment confirmation
+                            must be independently verified.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PAYMENT BENEFIT 2 -->
+
+                <div class="payment-benefit">
+
+                    <div class="payment-benefit-icon">
+
+                        <i class="fas fa-receipt"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Transaction Reference</h3>
+
+                        <p>
+                            Include your transaction reference
+                            to help identify your payment.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PAYMENT WARNING -->
+
+                <div class="payment-warning">
+
+                    <i class="fas fa-exclamation-circle"></i>
+
+                    <p>
+
+                        Uploading a payment screenshot does not
+                        automatically confirm that payment has
+                        been received.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 PAYMENT FORM
+            ================================== -->
+
+            <div class="payment-form-container">
+
+                <div class="payment-form-heading">
+
+                    <span class="section-subtitle">
+                        ONLINE PAYMENT
+                    </span>
+
+                    <h2>Payment Information</h2>
+
+                    <p>
+                        Complete the payment details below.
+                    </p>
+
+                </div>
+
+
+                <!-- FORMSPREE PAYMENT FORM -->
+
+                <form id="payment-form"
+                    action="https://formspree.io/f/xwloyqlb"
+                    method="POST"
+                    enctype="multipart/form-data">
+
+
+                    <!-- SPAM PROTECTION -->
+
+                    <input type="text"
+                        name="_gotcha"
+                        tabindex="-1"
+                        autocomplete="off"
+                        class="honeypot-field"
+                        aria-hidden="true">
+
+
+                    <!-- EMAIL SUBJECT -->
+
+                    <input type="hidden"
+                        name="_subject"
+                        value="New Payment Submission - Selena Massage Spa">
+
+
+                    <!-- PAYMENT STATUS -->
+
+                    <input type="hidden"
+                        name="payment_status"
+                        value="Pending verification">
+
+
+                    <!-- =================================
+                         BOOKING DETAILS
+                    ================================== -->
+
+                    <div class="form-section-title">
+
+                        <i class="fas fa-calendar-check"></i>
+
+                        Booking Details
+
+                    </div>
+
+
+                    <!-- BOOKING REFERENCE -->
+
+                    <div class="form-group">
+
+                        <label for="booking-reference">
+                            Booking Reference *
+                        </label>
+
+                        <input type="text"
+                            id="booking-reference"
+                            name="booking_reference"
+                            placeholder="Your booking reference"
+                            autocomplete="off"
+                            required>
+
+                    </div>
+
+
+                    <!-- CUSTOMER NAME -->
+
+                    <div class="form-group">
+
+                        <label for="payment-customer-name">
+                            Customer Name *
+                        </label>
+
+                        <input type="text"
+                            id="payment-customer-name"
+                            name="customer_name"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required>
+
+                    </div>
+
+
+                    <!-- CUSTOMER EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="payment-customer-email">
+                            Email Address *
+                        </label>
+
+                        <input type="email"
+                            id="payment-customer-email"
+                            name="customer_email"
+                            placeholder="Enter your booking email"
+                            autocomplete="email"
+                            required>
+
+                    </div>
+
+
+                    <!-- PAYMENT AMOUNT -->
+
+                    <div class="form-group">
+
+                        <label for="payment-amount">
+                            Amount to Pay (USD) *
+                        </label>
+
+                        <input type="text"
+                            id="payment-amount"
+                            name="payment_amount"
+                            placeholder="Booking amount"
+                            readonly
+                            required>
+
+                        <small>
+                            This amount is taken from your booking
+                            details. Confirm the final amount before
+                            sending payment.
+                        </small>
+
+                    </div>
+
+
+                    <!-- =================================
+                         PAYMENT METHOD
+                    ================================== -->
+
+                    <div class="form-section-title">
+
+                        <i class="fas fa-credit-card"></i>
+
+                        Select Payment Method
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="payment-method">
+                            Payment Method *
+                        </label>
+
+                        <select id="payment-method"
+                            name="payment_method"
+                            required>
+
+                            <option value="">
+                                Choose payment method
+                            </option>
+
+                            <option value="Bitcoin">
+                                Bitcoin (BTC)
+                            </option>
+
+                            <option value="USDT">
+                                USDT
+                            </option>
+
+                            <option value="Card">
+                                Card Payment
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- =================================
+                         BITCOIN PAYMENT DETAILS
+                    ================================== -->
+
+                    <div class="payment-method-details"
+                        id="btc-details"
+                        hidden>
+
+                        <h3>
+
+                            <i class="fab fa-bitcoin"></i>
+
+                            Bitcoin Payment
+
+                        </h3>
+
+                        <p>
+
+                            Send Bitcoin only to the wallet address
+                            below. Check the address carefully
+                            before sending.
+
+                        </p>
+
+
+                        <div class="wallet-address-box">
+
+                            <label>
+                                Bitcoin Wallet Address
+                            </label>
+
+                            <div class="wallet-address"
+                                id="btc-wallet-address">
+
+                                bc1qqk50lap6aygnkkwxqvnyjdw7k2n0h0rjex9l0n
+
+                            </div>
+
+
+                            <button type="button"
+                                class="wallet-copy-button"
+                                id="copy-wallet-button">
+
+                                <i class="fas fa-copy"></i>
+
+                                Copy BTC Address
+
+                            </button>
+
+                        </div>
+
+
+                        <p class="payment-small-note">
+
+                            Verify the receiving address and amount
+                            before confirming your transaction.
+
+                        </p>
+
+                    </div>
+
+
+                    <!-- =================================
+                         USDT PAYMENT DETAILS
+                    ================================== -->
+
+                    <div class="payment-method-details"
+                        id="usdt-details"
+                        hidden>
+
+                        <h3>
+
+                            <i class="fas fa-coins"></i>
+
+                            USDT Payment
+
+                        </h3>
+
+                        <p>
+
+                            The verified USDT wallet address and
+                            blockchain network must be configured
+                            before accepting USDT payments.
+
+                        </p>
+
+
+                        <div class="payment-configuration-warning">
+
+                            <strong>USDT not yet configured</strong>
+
+                            USDT payment is not available until
+                            the correct wallet address and network
+                            have been added.
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================
+                         CARD PAYMENT DETAILS
+                    ================================== -->
+
+                    <div class="payment-method-details"
+                        id="card-details"
+                        hidden>
+
+                        <h3>
+
+                            <i class="fas fa-credit-card"></i>
+
+                            Card Payment
+
+                        </h3>
+
+                        <p>
+
+                            Secure card checkout will be provided
+                            through a legitimate payment processor.
+
+                        </p>
+
+
+                        <div class="payment-configuration-warning">
+
+                            <strong>Card checkout not yet configured</strong>
+
+                            Card payment is unavailable until a
+                            secure hosted checkout provider has
+                            been connected.
+
+                        </div>
+
+
+                        <small>
+
+                            Never enter your card number, expiry date,
+                            CVV or PIN into this form.
+
+                        </small>
+
+                    </div>
+
+
+                    <!-- =================================
+                         TRANSACTION DETAILS
+                    ================================== -->
+
+                    <div class="form-section-title">
+
+                        <i class="fas fa-receipt"></i>
+
+                        Transaction Confirmation
+
+                    </div>
+
+
+                    <!-- TRANSACTION REFERENCE -->
+
+                    <div class="form-group">
+
+                        <label for="transaction-reference">
+
+                            Transaction ID / Reference *
+
+                        </label>
+
+                        <input type="text"
+                            id="transaction-reference"
+                            name="transaction_reference"
+                            placeholder="Enter your transaction ID"
+                            required>
+
+                    </div>
+
+
+                    <!-- =================================
+                         PAYMENT PROOF
+                    ================================== -->
+
+                    <div class="form-group payment-proof-group">
+
+                        <label for="payment-proof">
+
+                            Upload Payment Screenshot *
+
+                        </label>
+
+
+                        <input type="file"
+                            id="payment-proof"
+                            name="payment_proof"
+                            accept="image/png,image/jpeg,image/webp"
+                            required>
+
+
+                        <small class="payment-proof-help">
+
+                            Upload a clear PNG, JPG or WEBP payment
+                            screenshot. The actual upload limit depends
+                            on your Formspree plan. Never upload private
+                            keys, recovery phrases, card numbers or CVV.
+
+                        </small>
+
+
+                        <!-- SCREENSHOT PREVIEW -->
+
+                        <div id="payment-proof-preview" hidden></div>
+
+                    </div>
+
+
+                    <!-- =================================
+                         PAYMENT AGREEMENT
+                    ================================== -->
+
+                    <div class="payment-agreement">
+
+                        <input type="checkbox"
+                            id="payment-agreement"
+                            name="payment_agreement"
+                            value="Agreed"
+                            required>
+
+
+                        <label for="payment-agreement">
+
+                            I confirm that the transaction information
+                            I have submitted is accurate and understand
+                            that payment must be verified before my
+                            appointment is confirmed.
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- =================================
+                         PAYMENT MESSAGE
+                    ================================== -->
+
+                    <div id="payment-message"
+                        role="status"
+                        aria-live="polite">
+
+                    </div>
+
+
+                    <!-- =================================
+                         SUBMIT PAYMENT
+                    ================================== -->
+
+                    <button type="submit"
+                        class="payment-submit-btn"
+                        id="payment-submit">
+
+                        <span>
+                            Submit Payment Confirmation
+                        </span>
+
+                        <i class="fas fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <!-- SECURITY NOTICE -->
+
+                    <div class="payment-security-note">
+
+                        <span class="security-icon">
+
+                            <i class="fas fa-shield-alt"></i>
+
+                        </span>
+
+                        <p>
+
+                            Payment information is submitted for review.
+                            Submission does not guarantee payment
+                            verification.
+
+                        </p>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+
+            <!-- FOOTER ABOUT -->
+
+            <div class="footer-about">
+
+                <div class="footer-logo">
+                    SELENA
+                </div>
+
+                <p>
+
+                    Experience relaxation, beauty and professional
+                    tattoo services at Selena Massage Spa.
+
+                </p>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="massage.html">Massage</a>
+                    </li>
+
+                    <li>
+                        <a href="tattoo.html">Tattoo</a>
+                    </li>
+
+                    <li>
+                        <a href="booking.html">Book Appointment</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- SERVICES -->
+
+            <div class="footer-column">
+
+                <h3>Our Services</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="massage.html">
+                            Massage Therapy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tattoo.html">
+                            Tattoo Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">
+                            Our Gallery
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <ul>
+
+                    <li>
+
+                        <a href="mailto:Selenashepard92@gmail.com">
+
+                            Email Us
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="booking.html">
+
+                            Book Online
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+
+                    &copy;
+
+                    <span id="copyright-year"></span>
+
+                    Selena Massage Spa. All Rights Reserved.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
+
